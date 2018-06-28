@@ -5,6 +5,9 @@ const path = require('path');
 
 const app = express();
 
+const { User } = require('./app/models');
+
+User.create({ name: 'Joseph', email: 'joseph@domain.com', password: '1234' });
 
 nunjucks.configure(path.resolve('app', 'views'), {
   autoescape: true,

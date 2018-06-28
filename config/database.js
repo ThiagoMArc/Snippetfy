@@ -1,6 +1,6 @@
 module.exports = {
   username: 'root',
-  password: null,
+  password: 'root',
   database: 'snippetfy',
   host: 'localhost',
   dialect: 'mysql',
