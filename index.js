@@ -4,6 +4,9 @@ const nunjucks = require('nunjucks');
 const path = require('path');
 
 const app = express();
+
+app.use(express.static(path.resolve('app', 'public')));
+
 const routes = require('./app/routes');
 
 
